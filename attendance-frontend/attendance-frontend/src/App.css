@@ -1,0 +1,205 @@
+/* ===== MAIN CONTAINER ===== */
+.container {
+  position: relative;
+  max-width: 400px; /* Increased from 300 to fit login nicely */
+  margin: 40px auto;
+  background: white;
+  border-radius: 12px;
+  padding: 40px 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== TITLE ===== */
+.title {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+/* ===== TOP BAR ===== */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+.top-bar h2 {
+  font-size: 18px;
+  margin: 0;
+  color: #333;
+}
+
+/* ===== BUTTON (SKY BLUE) ===== */
+button {
+  padding: 10px 18px;
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(56, 189, 248, 0.4);
+}
+
+button:hover {
+  background: linear-gradient(135deg, #0ea5e9, #0284c7);
+  transform: translateY(-1px);
+}
+
+button:disabled {
+  background: #cbd5e1;
+  color: #64748b;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+/* ===== LOGIN FORM ===== */
+.login-container {
+  max-width: 350px;
+  margin: 80px auto;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.login-container h2 {
+  margin-bottom: 24px;
+  color: #333;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.login-form input {
+  width: 100%;
+  box-sizing: border-box;
+}
+.login-form button {
+  width: 100%;
+}
+
+/* ===== INPUTS ===== */
+input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  font-size: 15px;
+  transition: 0.2s;
+  box-sizing: border-box; /* Fix padding issues */
+}
+
+input:focus {
+  outline: none;
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+}
+
+/* ===== ATTENDANCE BOX ===== */
+.attendance-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.webcam-view {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  background: #eee;
+}
+
+.mobile-input {
+  text-align: center;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.instruction {
+  font-size: 13px;
+  color: #666;
+  text-align: center;
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+/* ===== BUTTON GROUP ===== */
+.button-group {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  justify-content: center;
+}
+.check-btn {
+  flex: 1;
+  text-align: center;
+}
+.check-btn.in {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  box-shadow: 0 4px 12px rgba(34, 197, 94, 0.4);
+}
+.check-btn.in:hover {
+  background: linear-gradient(135deg, #16a34a, #15803d);
+}
+.check-btn.out {
+  background: linear-gradient(135deg, #f43f5e, #e11d48);
+  box-shadow: 0 4px 12px rgba(244, 63, 94, 0.4);
+}
+.check-btn.out:hover {
+  background: linear-gradient(135deg, #e11d48, #be123c);
+}
+
+/* ===== TABLE ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 14px;
+}
+th {
+  background: #f8fafc;
+  padding: 10px;
+  text-align: left;
+  border-bottom: 2px solid #e2e8f0;
+  color: #475569;
+}
+td {
+  padding: 10px;
+  border-bottom: 1px solid #f1f5f9;
+  color: #333;
+}
+
+/* Admin View Tweaks */
+.admin-view {
+  align-items: stretch;
+}
+.admin-view h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Link Button (Logout) */
+.link-btn {
+  background: transparent;
+  color: #64748b;
+  box-shadow: none;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+.link-btn:hover {
+  background: #f1f5f9;
+  color: #ef4444; /* Red on hover for logout */
+  transform: none;
+}
+
