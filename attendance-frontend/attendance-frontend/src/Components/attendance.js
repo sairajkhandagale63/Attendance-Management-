@@ -45,9 +45,9 @@ function Attendance() {
   const isLate = (dateObj) => {
     const hours = dateObj.getHours();
     const minutes = dateObj.getMinutes();
-    // 10:15 AM = 10 hours, 15 minutes
+    // 10:20 AM = 10 hours, 20 minutes
     if (hours > 10) return true;
-    if (hours === 10 && minutes > 15) return true;
+    if (hours === 10 && minutes > 20) return true;
     return false;
   };
 
